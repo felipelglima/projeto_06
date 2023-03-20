@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --fontfamily-h: 'Staatliches';
+    --fontfamily-p: 'Palanquin';
+}
+
+body{
+    width: 38.4rem;
+}
+
+header{
+    background-color: #8E9AAF;
+    height: 27.9rem;
+    padding-top: 3.2rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h1{
+    font-family: var(--fontfamily-h);
+    font-weight: 400;
+    line-height: 3.4rem;
+    font-size: 4rem;
+
+    color: #FFFFFF;
+    text-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+
+    background-color: #CBC0D3;
+    width: 38.4rem;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+main{
+    background-color: #EFF1FF;
+}
+
+p{
+    font-family: var(--fontfamily-p);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #23053A;
+
+    text-align: center;
+    padding: 1.4rem 4.0rem;
+}
+
+#catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.6rem;
+
+    padding: 5.0rem 0;
+}
+
+.sorvetes{
+    position: relative;
+}
+
+.sorvetes h2{
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    width: 11.2rem;
+    height: 3.5rem;
+    background-color: #FEEAFA;
+    border-radius: 2.0rem;
+
+    text-align: center;
+    font-family: var(--fontfamily-h);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: #4A4E69;
+
+    animation-name: topdown;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.sorvetes img{
+    animation-name: downtop;
+    animation-duration: 1s;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
